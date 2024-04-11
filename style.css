@@ -133,7 +133,9 @@ body{
   font-size: 11.5px;
   width: 70%;
 }
-
+.centerSocialMedia{
+  display: none;
+}
 
 
 
@@ -194,4 +196,100 @@ body{
 }
 .bottomRightDiv img{
   width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============= MEDIA QUERIES ============= */
+@media screen and (max-width: 768px){
+
+  /* Menu */
+  .headerNav{
+    padding: 20px 20px;
+  }
+
+  /* Home */
+
+  .leftDiv{
+    display: none;
+  }
+
+
+
+
+
+  .centerDiv{
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+
+  .centerText{
+    font-size: 11.5px;
+    width: 100%;
+    transform: translateY(-20px);
+  }
+  .centerSocialMedia{
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    font-size: 1.2rem;
+  }
+
+
+
+  .bottomIndex{
+    position: absolute;
+    display: flex;
+    gap: 0 10px;
+    bottom: 180px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .bottomIndex span{
+    color: var(--primario-color);
+    font-size: 12px;
+  }
+  .rightDiv{
+    display: none;
+  }
+  .rightBottomDiv{
+    right: 50%;
+    transform: translate(50%, 0%);
+  }
+  
+}
+
+@media screen and (max-width: 640px){
+
+
+  /* Home */
+  .centerTitle{
+    font-size: 3.5rem;
+  }
+
+
+
+  .rightBottomDiv{
+    width: 100%;
+  }
+  .bottomLeftDiv {
+    font-size: 1rem;
+  }
+  .buttomDivSpanAndButton button{
+    padding:2px 0 1.5px 0;
+    font-size: 10px;
+  }
 }
