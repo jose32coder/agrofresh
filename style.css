@@ -203,10 +203,85 @@ body{
 
 
 
+/* =============== SECTION OUR PEOPLE ================ */
+
+section.ourPeople{
+  display: flex;
+  height: 70vh;
+  width: 100%;
+}
+
+section.ourPeople .ourPeople__leftDiv{
+  width: 50%;
+  background-color: #aec90a;
+  position: relative;
+  color: #f3f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section.ourPeople .ourPeople__leftDiv div.text {
+  position: absolute;
+  left: 185px;
+  top: 275px;
+  width: 220px;
+  z-index: 2;
+}
+
+section.ourPeople .ourPeople__leftDiv div.img{
+  position: absolute;
+  right: -130px;
+  top: -90px;
+  z-index: 1;
+  }
+  
+  
+  section.ourPeople .ourPeople__leftDiv div.img img{
+  width: 920px;
+  height: 920px;
+  z-index: 1;
+  object-fit: contain;
+  }
+
+section.ourPeople .ourPeople__leftDiv div h2{
+  font-size: 2rem;
+}
+
+section.ourPeople .ourPeople__leftDiv div h1 {
+  font-size: 3.5rem;
+  line-height: 45px;
+}
 
 
 
 
+
+
+section.ourPeople .ourPeople__rightDiv{
+  width: 50%;
+  background-color: #f3f3f4;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section.ourPeople .ourPeople__rightDiv div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  width: 80%;
+  color: #4d4d4d;
+}
+
+section.ourPeople .ourPeople__rightDiv div p{
+  z-index: 3;
+}
 
 
 
