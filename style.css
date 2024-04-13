@@ -286,6 +286,25 @@ section.ourPeople .ourPeople__rightDiv div p{
 
 
 
+/* ============= 3ERA SECTION ============= */
+
+section.section__green {
+  background-color: #007e48;
+  height: 40vh;
+  width: 100vw;
+  background-image: url(./public/img/green.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+
+
+
+
+
+
 
 /* ============= MEDIA QUERIES ============= */
 
@@ -316,6 +335,7 @@ section.ourPeople .ourPeople__rightDiv div p{
 }
 
 
+/*TABLET */
 
 @media screen and (max-width: 768px){
 
@@ -401,8 +421,23 @@ section.ourPeople .ourPeople__rightDiv div p{
     z-index: 1;
     object-fit: contain;
   }
+
+  section.section__green {
+    background-color: #007e48;
+    height: 35vh;
+    width: 100vw;
+    background-image: url(./public/img/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
   
 }
+
+  /*section green*/
+
+
+  
 
 @media screen and (max-width: 640px){
 
@@ -452,6 +487,7 @@ section.ourPeople .ourPeople__rightDiv div p{
 }
 
 
+/*phone*/
 @media screen and (max-width: 425px){
 
   section.ourPeople .ourPeople__leftDiv div.text {
@@ -497,6 +533,8 @@ section.ourPeople .ourPeople__rightDiv div p{
 
 }
 
+
+/*small phone*/
 @media screen and (max-width: 375px){
   
   section.ourPeople .ourPeople__rightDiv div {
