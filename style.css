@@ -199,12 +199,107 @@ body{
   width: 95%;
 }
 
+section.ourPeople{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
+
+section.ourPeople .top{
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: 100vw;
+  background-color: #007e48;
+}
+
+section.ourPeople .top .left{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #aec90a;
+}
+
+section.ourPeople .top .left .text{
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  color: #f3f3f4;
+  z-index: 1;
+}
+
+section.ourPeople .top .left .text h2{
+  font-size: 1.5rem;
+
+}
+
+section.ourPeople .top .left .text h1{
+  font-size: 4rem;
+  width: 130px;
+  line-height: 45px;
+
+}
+
+section.ourPeople .top .left .img {
+  position: absolute;
+  top: -125px;
+  left: -200px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 775px;
+}
+
+section.ourPeople .top .left .img img{
+  width: 1000px;
+  height: 900px;
+}
 
 
 
 
 
-/* =============== SECTION OUR PEOPLE ================ */
+section.ourPeople .top .right{
+  width: 50%;
+  background-color: #f3f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.ourPeople .top .right div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 60%;
+}
+
+section.ourPeople .top .right div p{
+  z-index: 3;
+}
+
+
+
+
+
+
+section.ourPeople .bottom{
+  background-color: #007e48;
+  height: 40vh;
+  width: 100vw;
+  background-image: url(./public/img/green.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/*
+
+our people viejo 
 
 section.ourPeople{
   display: flex;
@@ -254,11 +349,6 @@ section.ourPeople .ourPeople__leftDiv div h1 {
   line-height: 45px;
 }
 
-
-
-
-
-
 section.ourPeople .ourPeople__rightDiv{
   width: 50%;
   background-color: #f3f3f4;
@@ -284,10 +374,6 @@ section.ourPeople .ourPeople__rightDiv div p{
 }
 
 
-
-
-/* ============= 3ERA SECTION ============= */
-
 section.section__green {
   background-color: #007e48;
   height: 40vh;
@@ -297,10 +383,7 @@ section.section__green {
   background-size: cover;
   background-position: bottom;
 }
-
-
-
-
+*/
 
 
 
@@ -308,27 +391,53 @@ section.section__green {
 
 /* ============= MEDIA QUERIES ============= */
 
-@media screen and (max-width: 1024px){
-  section.ourPeople .ourPeople__leftDiv div.text {
+
+/*laptop l*/
+@media screen and (max-width: 1440px){
+
+  section.ourPeople .top .left .img {
     position: absolute;
-    left: 10vw;
-    top: 25vh;
-    width: 220px;
-    z-index: 2;
+    top: -125px;
+    left: -200px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 775px;
+  }
+
+  section.ourPeople .top .left .img img{
+    width: 1000px;
+    height: 900px;
+  }
+
+
 }
 
-  section.ourPeople .ourPeople__leftDiv div.img {
+
+/*laptop*/
+@media screen and (max-width: 1024px){
+
+  section.ourPeople .top .left .text{
     position: absolute;
-    right: -8vw;
-    top: 2vh;
+    margin: auto;
+    color: #f3f3f4;
     z-index: 1;
   }
 
-  section.ourPeople .ourPeople__leftDiv div.img img{
-    width: 70vw;
-    z-index: 1;
-    object-fit: contain;
+  section.ourPeople .top .left .img{
+    position: absolute;
+    top: -55px;
+    right: -50px;
+    width: 760px;
+  
   }
+  
+  section.ourPeople .top .left .img img{
+    width: 850px;
+    height: 750px;
+  }
+
+
 
 
 
@@ -396,48 +505,30 @@ section.section__green {
 
   /*our people*/
 
-  section.ourPeople .ourPeople__leftDiv div h1 {
-    font-size: 3rem;
-    line-height: 40px;
-}
-
-  section.ourPeople .ourPeople__leftDiv div.text {
+  section.ourPeople .top .left .text{
     position: absolute;
-    left: 10vw;
-    top: 28vh;
-    width: 220px;
-    z-index: 2;
-}
-
-  section.ourPeople .ourPeople__leftDiv div.img {
-    position: absolute;
-    right: -10vw;
-    top: 10vh;
+    top: 35%;
+    left: 25%;
+    color: #f3f3f4;
     z-index: 1;
   }
 
-  section.ourPeople .ourPeople__leftDiv div.img img{
-    width: 75vw;
-    z-index: 1;
-    object-fit: contain;
+  section.ourPeople .top .left .text h1{
+    font-size: 3.5rem;
   }
 
-  section.section__green {
-    background-color: #007e48;
-    height: 35vh;
-    width: 100vw;
-    background-image: url(./public/img/green.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-  }
-  
-}
+  section.ourPeople .top .left .img {
+        position: absolute;
+        top: -55px;
+        left: -235px;
+        right: 0px;
+        width: 760px;
+    }
 
-  /*section green*/
-
-
-  
+    section.ourPeople .top .left .img img{
+      width: 750px;
+      height: 750px;
+    }
 
 @media screen and (max-width: 640px){
 
@@ -490,45 +581,57 @@ section.section__green {
 /*phone*/
 @media screen and (max-width: 425px){
 
-  section.ourPeople .ourPeople__leftDiv div.text {
-    position: absolute;
-    left: 10vw;
-    top: 30vh;
-    width: 140px;
-    z-index: 2;
+  section.ourPeople{
+    overflow-x: hidden;
+
   }
 
-  section.ourPeople .ourPeople__leftDiv div h2 {
-    font-size: 1.5rem;
-  }
-
-  section.ourPeople .ourPeople__leftDiv div h1 {
-    font-size: 2rem;
-    line-height: 30px;
-  }
-
-  section.ourPeople .ourPeople__leftDiv div.img {
-    position: absolute;
-    right: -27%;
-    top: 26%;
-    z-index: 1;
-  }
-
-  section.ourPeople .ourPeople__leftDiv div.img img {
-  width: 85vw;
-  z-index: 1;
-  object-fit: contain;
-  }
-
-  section.ourPeople .ourPeople__rightDiv div {
+  section.ourPeople .top .right div{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
     gap: 15px;
-    width: 85%;
-    color: #4d4d4d;
+    width: 65%;
+    font-size: 0.83rem;
   }
+
+  section.ourPeople .top .left .text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: #f3f3f4;
+    z-index: 1;
+}
+
+  section.ourPeople .top .left .text h2{
+    font-size: 1rem;
+  
+  }
+  
+  section.ourPeople .top .left .text h1{
+    font-size: 2rem;
+    width: 130px;
+    line-height: 30px;
+  
+  }
+
+  section.ourPeople .top .left .img {
+    position: absolute;
+    top: 85px;
+    left: -215px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 775px;
+}
+  
+  section.ourPeople .top .left .img img{
+    width: 500px;
+    height: 400px;
+  }
+
+
 
 
 }
@@ -536,15 +639,49 @@ section.section__green {
 
 /*small phone*/
 @media screen and (max-width: 375px){
-  
-  section.ourPeople .ourPeople__rightDiv div {
+
+  section.ourPeople .top .right div{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    width: 85%;
-    color: #4d4d4d;
-    font-size: 0.98rem;
+    gap: 15px;
+    width: 65%;
+    font-size: 0.8rem;
+  }
+
+  section.ourPeople .top .left .text {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: #f3f3f4;
+    z-index: 1;
+}
+
+  section.ourPeople .top .left .text h2{
+    font-size: 1rem;
+  
+  }
+  
+  section.ourPeople .top .left .text h1{
+    font-size: 2rem;
+    width: 130px;
+    line-height: 30px;
+  
+  }
+
+  section.ourPeople .top .left .img {
+    position: absolute;
+    top: 110px;
+    left: -150px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 775px;
+}
+  
+  section.ourPeople .top .left .img img{
+    width: 400px;
+    height: 350px;
   }
 }
