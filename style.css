@@ -198,13 +198,68 @@ body{
 .bottomRightDiv img{
   width: 95%;
 }
+.bottomIndex{
+  position: absolute;
+  display: none;
+  gap: 0 10px;
+  bottom: 180px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.bottomIndex span{
+  color: var(--primario-color);
+  font-size: 12px;
+}
+
+.divBottomScroll{
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  z-index: 1000;
+}
+.bottomScroll{
+  color: var(--primario-color);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: .8;
+}
+.bottomLine{
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 25px;
+  transform: scale(3);
+  background: var(--primario-color);
+  opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section.ourPeople{
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background-color: red;
 }
 
 section.ourPeople .top{
@@ -389,6 +444,109 @@ section.section__green {
 
 
 
+.ourProducts{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.titleOurProducts{
+  text-align: center;
+  margin: 50px 0;
+  font-size: 2rem;
+}
+
+.ourFacilities{
+  position: absolute;
+  width: 40vw;
+  height: 32rem;
+  z-index: 100;
+  background: var(--secundario-color);
+  color: var(--primario-color);
+  top: 20%;
+}
+
+
+/* Estilos del swiper, las clases vienen predeterminadas, por lo que es bueno hacer una excepcion para el camelCase */
+.swiper-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 550px; 
+  margin: 0 auto;
+  width: 70vw;
+  overflow: hidden;
+}
+.swiper-slide img{
+  width: 75vw;
+  height: 500px;
+}
+.swiperButtons{
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.swiper-button-prev, .swiper-button-next {
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  justify-content: end;
+  background: transparent;
+  color: var(--secundario-color);
+  padding: 6px 6px;
+  margin: 0 6px;
+  border-radius: 50%;
+  border: 1px solid var(--secundario-color);
+  opacity: .6;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  background: var(--secundario-color);
+  color: var(--primario-color);
+  border: 1px solid var(--primario-color);
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%;
+  color: var(--secundario-color);
+}
+.swiper-pagination-bullet{
+  width: 5px;
+  height: 5px;
+}
+.swiper-pagination-bullet-active{
+  color: var(--secundario-color);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: 100%;
+  bottom: 5px;
+  left: 75%;
+  transform: translate(-50%, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ============= MEDIA QUERIES ============= */
 
 
@@ -416,6 +574,10 @@ section.section__green {
 
 /*laptop*/
 @media screen and (max-width: 1024px){
+
+  .divBottomScroll{
+    display: none;
+  }
 
   section.ourPeople .top .left .text{
     position: absolute;
@@ -480,21 +642,10 @@ section.section__green {
     gap: 0 30px;
     font-size: 1.2rem;
   }
-
-
-
   .bottomIndex{
-    position: absolute;
     display: flex;
-    gap: 0 10px;
-    bottom: 180px;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
-  .bottomIndex span{
-    color: var(--primario-color);
-    font-size: 12px;
-  }
+
   .rightDiv{
     display: none;
   }
@@ -684,4 +835,5 @@ section.section__green {
     width: 400px;
     height: 350px;
   }
+}
 }

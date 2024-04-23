@@ -9,14 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./swiper.all.min.css">
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Agrofesh</title>
   </head>
   <body>
-    
     <header class="header">
       <nav class="headerNav">
         <div id="navLogo" class="navLogo">
@@ -24,9 +26,7 @@
             <span class="navTitleLeft">agro</span>
             <span class="navTitleRight">fresh</span>
           </span>
-          <span class="navTitleMin">
-            products
-          </span>
+          <span class="navTitleMin"> products </span>
         </div>
         <div class="navMenu" id="navMenu">
           <span class="menuFirstIcon">
@@ -36,10 +36,8 @@
             <i class="fa-brands fa-whatsapp"></i>
           </span>
         </div>
-      </nav>   
+      </nav>
     </header>
-
-
 
     <section class="home" id="home">
       <div class="leftDiv">
@@ -53,7 +51,12 @@
       <div class="centerDiv">
         <span class="centerNumber">01.</span>
         <h1 class="centerTitle">Agrofresh</h1>
-        <p class="centerText">It is a company dedicated to the productions and marketing of resh hersb. We have been exporting formare than 6 years to North American market. We are located in Rionegro, Antioquia 7 minutes away from Jose María Cordoba International airport.</p>
+        <p class="centerText">
+          It is a company dedicated to the productions and marketing of resh
+          hersb. We have been exporting formare than 6 years to North American
+          market. We are located in Rionegro, Antioquia 7 minutes away from Jose
+          María Cordoba International airport.
+        </p>
         <div class="centerSocialMedia">
           <span><i class="fa-brands fa-facebook"></i></span>
           <span><i class="fa-brands fa-instagram"></i></span>
@@ -86,14 +89,17 @@
           </div>
         </div>
         <div class="bottomRightDiv">
-          <img src="./public/img/flores.png" alt="">
+          <img src="./public/img/flores.png" alt="" />
         </div>
       </div>
 
-      <span>scroll</span>
+      <div class="divBottomScroll">
+        <span class="bottomScroll">scroll</span>
+        <div class="bottomLine"></div>
+      </div>
     </section>
 
-  <!--
+    <!--
         <section class="ourPeople" id="ourPeople">
 
       <div>
@@ -136,52 +142,83 @@
 
   -->
     <section class="ourPeople" id="ourPeople">
-      
       <div class="top">
-        
         <div class="left">
-          
           <div class="text">
-  
             <h2>02.</h2>
             <h1>Our people</h1>
-  
           </div>
-  
+
           <div class="img">
-  
-            <img src="./public/img/menta.png" alt="">
-  
+            <img src="./public/img/menta.png" alt="" />
           </div>
         </div>
 
         <div class="right">
-          
           <div>
-  
-            <p>Most of our staff are female-headedhouseholds and have experience in selecting and packing the product. Most of them are people living in eastern Antioquia, which contributes to regional socio-economic growth and sustainability of their homes.</p>
-            <p>We also have suppliers who buy their production, which have experience in agricultural production and meet the requirements of the ICA to be certified as export premises.</p>
-  
+            <p>
+              Most of our staff are female-headedhouseholds and have experience
+              in selecting and packing the product. Most of them are people
+              living in eastern Antioquia, which contributes to regional
+              socio-economic growth and sustainability of their homes.
+            </p>
+            <p>
+              We also have suppliers who buy their production, which have
+              experience in agricultural production and meet the requirements of
+              the ICA to be certified as export premises.
+            </p>
           </div>
+        </div>
+      </div>
 
+      <div class="bottom"></div>
+    </section>
+
+    <section class="ourProducts" id="ourProducts">
+      <h2 class="titleOurProducts">Our Products</h2>
+
+        <div class="ourFacilities" id="">
+          <div class="">
+            <span class="numberFacilities">04.</span>
+            <h3 class="titleFacilities">Our facilities</h3>
+            <p class="textFacilities">We have the inftrastructure supported by the Colombian Agricultural Institute (ICA) fot the production selection of products for export, make-up and packaging</p>
+            <button class="buttonFacilities">Watch Video</button>
+          </div>
         </div>
 
-      </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./public/img/slider/img1.jpg" alt="Descripción de imagen 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/img/slider/img2.jpg" alt="Descripción de imagen 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/img/slider/img3.jpg" alt="Descripción de imagen 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/img/slider/img4.jpg" alt="Descripción de imagen 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="./public/img/slider/img5.jpg" alt="Descripción de imagen 1">
+              </div>
+          </div>
+          <div class="swiperButtons">
+            <div class="swiper-pagination"></div>
 
-      <div class="bottom">
-        
-      </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <!-- Paginación de Swiper -->
 
     </section>
-
-    <section class="carrucel" id="carrucel">
-
-    </section>
-
-
 
     <script type="module" src="/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+    <script src="./swiper-bundle.min.js"></script>
   </body>
 </html>
