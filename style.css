@@ -267,15 +267,17 @@ section.ourPeople .top{
   flex-direction: row;
   height: 60vh;
   width: 100vw;
-  background-color: #007e48;
+  background-color: #aec90a;
 }
 
 section.ourPeople .top .left{
   position: relative;
   width: 50%;
   height: 100%;
-  background-color: #aec90a;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 
 section.ourPeople .top .left .text{
   position: absolute;
@@ -298,19 +300,23 @@ section.ourPeople .top .left .text h1{
 }
 
 section.ourPeople .top .left .img {
+  /*
   position: absolute;
-  top: -125px;
-  left: -200px;
+  top: -10%;
+  left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 775px;
+  */
 }
 
 section.ourPeople .top .left .img img{
-  width: 1000px;
-  height: 900px;
-}
+  height: 700px;
+  display: block;
+  /* margin: auto; */
+  width: 730px;
+  object-fit: cover;
+  }
 
 
 
@@ -329,7 +335,7 @@ section.ourPeople .top .right div{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   width: 60%;
 }
 
@@ -343,7 +349,6 @@ section.ourPeople .top .right div p{
 
 
 section.ourPeople .bottom{
-  background-color: #007e48;
   height: 40vh;
   width: 100vw;
   background-image: url(./public/img/green.jpg);
@@ -351,200 +356,6 @@ section.ourPeople .bottom{
   background-size: cover;
   background-position: bottom;
 }
-
-/*
-
-our people viejo 
-
-section.ourPeople{
-  display: flex;
-  height: 70vh;
-  width: 100vw;
-}
-
-section.ourPeople .ourPeople__leftDiv{
-  width: 50%;
-  background-color: #aec90a;
-  position: relative;
-  color: #f3f3f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-section.ourPeople .ourPeople__leftDiv div.text {
-  position: absolute;
-  left: 15vw;
-  top: 25vh;
-  width: 220px;
-  z-index: 2;
-}
-
-section.ourPeople .ourPeople__leftDiv div.img {
-  position: absolute;
-  right: -15%;
-  top: -8%;
-  z-index: 1;
-}
-  
-  
-  section.ourPeople .ourPeople__leftDiv div.img img{
-  width: 65vw;
-  z-index: 1;
-  object-fit: contain;
-  }
-
-section.ourPeople .ourPeople__leftDiv div h2{
-  font-size: 2rem;
-}
-
-section.ourPeople .ourPeople__leftDiv div h1 {
-  font-size: 3.5rem;
-  line-height: 45px;
-}
-
-section.ourPeople .ourPeople__rightDiv{
-  width: 50%;
-  background-color: #f3f3f4;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-section.ourPeople .ourPeople__rightDiv div{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-  width: 80%;
-  color: #4d4d4d;
-}
-
-section.ourPeople .ourPeople__rightDiv div p{
-  z-index: 3;
-}
-
-
-section.section__green {
-  background-color: #007e48;
-  height: 40vh;
-  width: 100vw;
-  background-image: url(./public/img/green.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
-*/
-
-
-
-
-
-.ourProducts{
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.titleOurProducts{
-  text-align: center;
-  margin: 50px 0;
-  font-size: 2rem;
-}
-
-.ourFacilities{
-  position: absolute;
-  width: 40vw;
-  height: 32rem;
-  z-index: 100;
-  background: var(--secundario-color);
-  color: var(--primario-color);
-  top: 20%;
-}
-
-
-/* Estilos del swiper, las clases vienen predeterminadas, por lo que es bueno hacer una excepcion para el camelCase */
-.swiper-container {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  height: 550px; 
-  margin: 0 auto;
-  width: 70vw;
-  overflow: hidden;
-}
-.swiper-slide img{
-  width: 75vw;
-  height: 500px;
-}
-.swiperButtons{
-  display: flex;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
-.swiper-button-prev, .swiper-button-next {
-  cursor: pointer;
-  z-index: 100;
-  display: flex;
-  justify-content: end;
-  background: transparent;
-  color: var(--secundario-color);
-  padding: 6px 6px;
-  margin: 0 6px;
-  border-radius: 50%;
-  border: 1px solid var(--secundario-color);
-  opacity: .6;
-}
-.swiper-button-prev:hover, .swiper-button-next:hover{
-  background: var(--secundario-color);
-  color: var(--primario-color);
-  border: 1px solid var(--primario-color);
-  opacity: 1;
-}
-
-.swiper-pagination {
-  position: absolute; 
-  bottom: 10px; 
-  left: 50%;
-  color: var(--secundario-color);
-}
-.swiper-pagination-bullet{
-  width: 5px;
-  height: 5px;
-}
-.swiper-pagination-bullet-active{
-  color: var(--secundario-color);
-}
-
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  width: 100%;
-  bottom: 5px;
-  left: 75%;
-  transform: translate(-50%, 0);
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ============= MEDIA QUERIES ============= */
@@ -553,20 +364,33 @@ section.section__green {
 /*laptop l*/
 @media screen and (max-width: 1440px){
 
+  section.ourPeople .top .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
   section.ourPeople .top .left .img {
+    /*
     position: absolute;
-    top: -125px;
-    left: -200px;
+    top: -10%;
+    left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 775px;
+    */
   }
-
+  
   section.ourPeople .top .left .img img{
-    width: 1000px;
-    height: 900px;
-  }
+    height: 700px;
+    display: block;
+    /* margin: auto; */
+    width: 730px;
+    object-fit: cover;
+    }
 
 
 }
@@ -579,28 +403,33 @@ section.section__green {
     display: none;
   }
 
-  section.ourPeople .top .left .text{
+  section.ourPeople .top .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+  section.ourPeople .top .left .img {
+    /*
     position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: auto;
-    color: #f3f3f4;
-    z-index: 1;
-  }
-
-  section.ourPeople .top .left .img{
-    position: absolute;
-    top: -55px;
-    right: -50px;
-    width: 760px;
-  
+    */
   }
   
   section.ourPeople .top .left .img img{
-    width: 850px;
-    height: 750px;
-  }
-
-
-
+    height: 600px;
+    display: block;
+    /* margin: auto; */
+    width: 600px;
+    object-fit: cover;
+    }
 
 
 }
@@ -622,9 +451,6 @@ section.section__green {
   }
 
 
-
-
-
   .centerDiv{
     width: auto;
     left: 50%;
@@ -639,9 +465,12 @@ section.section__green {
   .centerSocialMedia{
     display: flex;
     justify-content: center;
-    gap: 0 30px;
+    gap: 20px;
     font-size: 1.2rem;
   }
+
+
+
   .bottomIndex{
     display: flex;
   }
@@ -668,18 +497,46 @@ section.section__green {
     font-size: 3.5rem;
   }
 
+  section.ourPeople .top .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
   section.ourPeople .top .left .img {
-        position: absolute;
-        top: -55px;
-        left: -235px;
-        right: 0px;
-        width: 760px;
+    /*
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    */
+  }
+  
+  section.ourPeople .top .left .img img{
+    height: 500px;
+    display: block;
+    /* margin: auto; */
+    width: 500px;
+    object-fit: cover;
     }
 
-    section.ourPeople .top .left .img img{
-      width: 750px;
-      height: 750px;
-    }
+    section.ourPeople .top .right div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      width: 60%;
+      font-size: 0.9rem;
+  }
+
+
+}
 
 @media screen and (max-width: 640px){
 
@@ -705,26 +562,67 @@ section.section__green {
 
   /*our people*/
 
-  section.ourPeople .ourPeople__leftDiv div.text {
-    position: absolute;
-    left: 50px;
-    top: 275px;
-    width: 220px;
-    z-index: 2;
+  section.ourPeople{
+    overflow-x: hidden;
+
   }
 
-  section.ourPeople .ourPeople__leftDiv div.img {
+  section.ourPeople .top .right div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
+    font-size: 70%;
+  }
+
+
+  section.ourPeople .top .left .text h2{
+    font-size: 1rem;
+  
+  }
+  
+
+  section.ourPeople .top .left .text{
     position: absolute;
-    right: -25%;
-    top: 17%;
+    top: 35%;
+    left: 20%;
+    color: #f3f3f4;
     z-index: 1;
   }
 
-  section.ourPeople .ourPeople__leftDiv div.img img{
-    width: 500px;
-    z-index: 1;
-    object-fit: contain;
+  section.ourPeople .top .left .text h1{
+    font-size: 2.5rem;
   }
+
+  section.ourPeople .top .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+  section.ourPeople .top .left .img {
+    /*
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    */
+  }
+  
+  section.ourPeople .top .left .img img{
+    height: 320px;
+    display: block;
+    /* margin: auto; */
+    width: 320px;
+    object-fit: cover;
+    }
 
 }
 
@@ -742,45 +640,57 @@ section.section__green {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     width: 65%;
-    font-size: 0.83rem;
+    font-size: 70%;
   }
 
-  section.ourPeople .top .left .text {
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    color: #f3f3f4;
-    z-index: 1;
-}
 
   section.ourPeople .top .left .text h2{
     font-size: 1rem;
   
   }
   
-  section.ourPeople .top .left .text h1{
-    font-size: 2rem;
-    width: 130px;
-    line-height: 30px;
-  
+
+  section.ourPeople .top .left .text{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    color: #f3f3f4;
+    z-index: 1;
   }
 
+  section.ourPeople .top .left .text h1{
+    font-size: 2.5rem;
+  }
+
+  section.ourPeople .top .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
   section.ourPeople .top .left .img {
+    /*
     position: absolute;
-    top: 85px;
-    left: -215px;
+    top: -10%;
+    left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 775px;
-}
+    */
+  }
   
   section.ourPeople .top .left .img img{
-    width: 500px;
-    height: 400px;
-  }
+    height: 280px;
+    display: block;
+    /* margin: auto; */
+    width: 280px;
+    object-fit: cover;
+    }
 
 
 
@@ -796,44 +706,71 @@ section.section__green {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     width: 65%;
-    font-size: 0.8rem;
+    font-size: 70%;
   }
 
-  section.ourPeople .top .left .text {
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    color: #f3f3f4;
-    z-index: 1;
-}
+  section.ourPeople{
+    overflow-x: hidden;
+
+  }
+
+  section.ourPeople .top .right div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
+    font-size: 70%;
+  }
+
 
   section.ourPeople .top .left .text h2{
     font-size: 1rem;
   
   }
   
-  section.ourPeople .top .left .text h1{
-    font-size: 2rem;
-    width: 130px;
-    line-height: 30px;
-  
+
+  section.ourPeople .top .left .text{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    color: #f3f3f4;
+    z-index: 1;
   }
 
+  section.ourPeople .top .left .text h1{
+    font-size: 2rem;
+  }
+
+  section.ourPeople .top .left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
   section.ourPeople .top .left .img {
+    /*
     position: absolute;
-    top: 110px;
-    left: -150px;
+    top: -10%;
+    left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 775px;
-}
+    */
+  }
   
   section.ourPeople .top .left .img img{
-    width: 400px;
-    height: 350px;
-  }
+    height: 250px;
+    display: block;
+    /* margin: auto; */
+    width: 250px;
+    object-fit: cover;
+    }
 }
 }
