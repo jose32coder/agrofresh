@@ -198,62 +198,10 @@ body{
 .bottomRightDiv img{
   width: 95%;
 }
-.bottomIndex{
-  position: absolute;
-  display: none;
-  gap: 0 10px;
-  bottom: 180px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.bottomIndex span{
-  color: var(--primario-color);
-  font-size: 12px;
-}
-
-.divBottomScroll{
-  position: absolute;
-  bottom: 120px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  cursor: pointer;
-  z-index: 1000;
-}
-.bottomScroll{
-  color: var(--primario-color);
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  opacity: .8;
-}
-.bottomLine{
-  position: absolute;
-  top: 70px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 1px;
-  height: 25px;
-  transform: scale(3);
-  background: var(--primario-color);
-  opacity: .8;
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*SECTION OUR PEOPLE*/
 
 section.ourPeople{
   display: flex;
@@ -358,6 +306,171 @@ section.ourPeople .bottom{
 }
 
 
+/*SECTION OUR PRODUCTS*/
+
+section.ourProducts{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f3f3f4;
+}
+
+section.ourProducts .top{
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.ourProducts .top h1{
+  font-size: 3rem;
+
+}
+
+section.ourProducts .top::after {
+  content: '';
+  position: absolute;
+  top: 130px;
+  width: 85px;
+  height: 2px;
+  background-color: #007e48;
+}
+
+section.ourProducts .center {
+  width: 80vw;
+  height: 60vh;
+  margin: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.swiper-slide div {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.swiper-slide div.carrucel-img1 {
+  background-image: url(./public/img/carrucel\ 1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+    background-size: 415px 450px;
+}
+
+.swiper-slide div.carrucel-img2 {
+  background-image: url(./public/img/carrucel\ 2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+    background-size: 415px 450px;
+}
+
+.swiper-slide div.carrucel-img3 {
+  background-image: url(./public/img/carrucel\ 3.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+    background-size: 415px 450px;
+}
+
+.swiper-slide div.carrucel-img4{
+  background-image: url(./public/img/carrucel\ 4.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+    background-size: 415px 450px;
+}
+
+
+
+
+.swiper-slide p {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+.center .swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block
+}
+
+
+
+section.ourProducts .bottom{
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+section.ourProducts .bottom div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aec90a;
+  padding: 10px;
+  border-radius: 30px;
+  width: 160px;
+  text-align: center;
+}
+
+section.ourProducts .bottom div:first-child p{
+  font-size: 1rem;
+  text-transform: uppercase;
+
+}
+
+section.ourProducts .bottom div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: #000000 solid 1px;
+  padding: 10px 15px 10px 20px;
+  border-radius: 30px;
+  width: 160px;
+}
+
+section.ourProducts .bottom div:last-child p{
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
 /* ============= MEDIA QUERIES ============= */
 
 
@@ -399,10 +512,6 @@ section.ourPeople .bottom{
 /*laptop*/
 @media screen and (max-width: 1024px){
 
-  .divBottomScroll{
-    display: none;
-  }
-
   section.ourPeople .top .left{
     position: relative;
     width: 50%;
@@ -423,13 +532,13 @@ section.ourPeople .bottom{
     */
   }
   
-  section.ourPeople .top .left .img img{
-    height: 600px;
+  section.ourPeople .top .left .img img {
+    height: 550px;
     display: block;
     /* margin: auto; */
-    width: 600px;
+    width: 550px;
     object-fit: cover;
-    }
+}
 
 
 }
@@ -469,12 +578,18 @@ section.ourPeople .bottom{
     font-size: 1.2rem;
   }
 
-
-
   .bottomIndex{
+    position: absolute;
     display: flex;
+    gap: 0 10px;
+    bottom: 180px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
-
+  .bottomIndex span{
+    color: var(--primario-color);
+    font-size: 12px;
+  }
   .rightDiv{
     display: none;
   }
@@ -518,10 +633,10 @@ section.ourPeople .bottom{
   }
   
   section.ourPeople .top .left .img img{
-    height: 500px;
+    height: 450px;
     display: block;
     /* margin: auto; */
-    width: 500px;
+    width: 450px;
     object-fit: cover;
     }
 
@@ -617,10 +732,10 @@ section.ourPeople .bottom{
   }
   
   section.ourPeople .top .left .img img{
-    height: 320px;
+    height: 280px;
     display: block;
     /* margin: auto; */
-    width: 320px;
+    width: 280px;
     object-fit: cover;
     }
 
@@ -685,10 +800,10 @@ section.ourPeople .bottom{
   }
   
   section.ourPeople .top .left .img img{
-    height: 280px;
+    height: 260px;
     display: block;
     /* margin: auto; */
-    width: 280px;
+    width: 260px;
     object-fit: cover;
     }
 
@@ -766,11 +881,10 @@ section.ourPeople .bottom{
   }
   
   section.ourPeople .top .left .img img{
-    height: 250px;
+    height: 220px;
     display: block;
     /* margin: auto; */
-    width: 250px;
+    width: 220px;
     object-fit: cover;
     }
-}
 }
