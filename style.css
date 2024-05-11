@@ -372,7 +372,7 @@ section.ourProducts .center {
 
 .swiper-slide div {
   width: 100%;
-  height: 100%;
+  height: 93%;
   border-radius: 15px;
 }
 
@@ -380,7 +380,7 @@ section.ourProducts .center {
   background-image: url(./public/img/carrucel1.jpeg);
   background-repeat: no-repeat;
   background-position: center;
-    background-size: 415px 450px;
+  background-size: 360px 370px;
 }
 
 .swiper-slide div.carrucel-img2 {
@@ -647,6 +647,7 @@ section.quality .right {
     width: 100%;
     height: 40vh;
     position: relative;
+    overflow-x: hidden;
   }
 
   section.contact-us .top video {
@@ -666,8 +667,9 @@ section.quality .right {
     display: flex;
     flex-direction: row;align-items: center;
     justify-content: center;
-    background-color: #f3f3f4;
+    background-color: #fff;
     gap: 125px;
+    overflow-x: hidden;
   }
 
   section.contact-us .bottom .left{
@@ -795,6 +797,78 @@ section.quality .right {
     /* text-align: center; */
     padding: 0px 48px;
   }
+
+    /*SECTION 8 footer*/
+
+    section.footer {
+      width: 100%;
+      height: 40vh;
+      overflow-x: hidden;
+    }
+
+    section.footer .top {
+      width: 100%;
+      height: 80%;
+      background-color: #f3f3f4;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 55px;
+      text-align: start;
+      overflow-x: hidden;
+    }
+
+    section.footer .top > div {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      height: 134px;
+      border-right: 1px solid #000;
+      padding-right: 55px;
+    }
+
+    section.footer .top > div:last-child {
+      border-right: 0px solid #000;
+      padding-right: 0px;
+      gap: 20px;
+    }
+
+    section.footer .top > div:last-child div i{
+      font-size: 1.7rem;
+    }
+
+    section.footer .top div div{
+      gap: 35px;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: flex-start;
+    } 
+
+    section.footer .bottom {
+      width: 100%;
+      height: 20%;
+      background-color: #000000;
+      color: #f3f3f4;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: start;
+      font-size: 0.75rem;
+      overflow-x: hidden;
+    }
+
+    section.footer .bottom p {
+      border-right: 1px solid #fefefe;
+      padding-right: 10px;
+  }
+  
+  
 
 
 
@@ -1162,7 +1236,7 @@ section.quality .right {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #f3f3f4;
+    background-color: #fff;
     gap: 50px;
   }
 
@@ -1242,6 +1316,36 @@ section.quality .right {
     text-align: center;
     padding: 0px 43px;
   }
+
+    /*SECTION 8 footer*/
+
+    section.footer .top {
+      width: 100%;
+      height: 80%;
+      background-color: #f3f3f4;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: start;
+    }
+
+    section.footer .top > div {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      height: 115px;
+      border-right: 1px solid #000;
+      padding-right: 20px;
+      font-size: 0.9rem;
+    }
+
+
+
+
 
 
 }
@@ -1502,7 +1606,7 @@ section.quality .right {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      background-color: #f3f3f4;
+      background-color: #fff;
       gap: 30px;
     }
 
@@ -1541,6 +1645,48 @@ section.quality .right {
       height: 30px;
       text-align: center;
     }
+
+    /*SECTION 8 footer*/
+
+    section.footer .top {
+      width: 100%;
+      height: 80%;
+      background-color: #f3f3f4;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      text-align: start;
+    }
+
+    section.footer .top > div {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      height: 115px;
+      border-right: 1px solid #000;
+      padding-right: 15px;
+      font-size: 0.8rem;
+    }
+
+    section.footer .top > div:last-child div i {
+      font-size: 1.3rem;
+    }
+
+    section.footer .top div div {
+      gap: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: flex-start;
+    }
+
+
+
+
 
 
 
@@ -1751,13 +1897,14 @@ section.quality .right {
 
     section.contact-us .bottom {
       width: 100%;
-      height: 125vh;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #f3f3f4;
+      background-color: #fff;
       gap: 50px;
+      padding: 50px 10px;
     }
 
     section.contact-us .bottom .right {
@@ -1850,6 +1997,64 @@ section.quality .right {
       height: 35px;
       text-align: center;
     }
+
+    /*SECTION 8 footer*/
+
+    section.footer .top {
+      width: 100%;
+      height: 80%;
+      background-color: #f3f3f4;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      text-align: start;
+    }
+    
+    section.footer .top > div {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      height: 95px;
+      border-right: 0.8px solid #000;
+      padding-right: 5px;
+      font-size: 0.65rem;
+    }
+
+    section.footer .top > div:last-child div i {
+      font-size: 1.1rem;
+    } 
+
+    section.footer .top div div {
+      gap: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: flex-start;
+    }
+
+    section.footer .bottom {
+      width: 100%;
+      height: 20%;
+      background-color: #000000;
+      color: #f3f3f4;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      text-align: start;
+      font-size: 0.65rem;
+    }
+
+    section.footer .bottom p {
+      border-right: 0.8px solid #fefefe;
+      padding-right: 5px;
+    }
+
 
 
 
@@ -2084,6 +2289,47 @@ section.quality .right {
     padding: 0px 36px;
   }
 
+
+  /*SECTION 8 footer*/
+
+  section.footer .top > div {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    height: 85px;
+    border-right: 0.8px solid #000;
+    padding-right: 5px;
+    font-size: 0.55rem;
+  }
+
+  section.footer .top > div:last-child div i {
+    font-size: 0.8rem;
+  }
+
+  section.footer .top div div {
+    gap: 9px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+  }
+
+  section.footer .bottom {
+    width: 100%;
+    height: 20%;
+    background-color: #000000;
+    color: #f3f3f4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: start;
+    font-size: 0.6rem;
+  }
+
 }
 
 
@@ -2286,5 +2532,46 @@ section.quality .right {
       padding: 0px 29px;
     }
 
+
+
+    /*SECTION 8 footer*/
+
+    section.footer .top > div {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      height: 85px;
+      border-right: 0.8px solid #000;
+      padding-right: 5px;
+      font-size: 0.45rem;
+    }
+
+    section.footer .top > div:last-child div i {
+      font-size: 0.65rem;
+    }
+
+    section.footer .top div div {
+      gap: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: flex-start;
+    }
+
+    section.footer .bottom {
+      width: 100%;
+      height: 20%;
+      background-color: #000000;
+      color: #f3f3f4;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      text-align: start;
+      font-size: 0.5rem;
+    }
 
 }
